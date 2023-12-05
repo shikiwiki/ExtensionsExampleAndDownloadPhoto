@@ -25,14 +25,16 @@
         android:layout_width="460dp"
         android:layout_height="59dp"
         android:hint="@string/input_link"
-        android:textColor="@color/black"
+        android:textColor="@color/input"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        app:layout_constraintVertical_bias="0.197"
+         android:autofillHints="@string/input_link"
+         android:inputType="textUri" />
 
 
     <Button
@@ -60,6 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.691"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/view_description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
