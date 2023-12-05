@@ -9,15 +9,12 @@ import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
 
-    private val mainText: ImageView by lazy { findViewById(R.id.main_text) }
-    private lateinit var inputUrl: EditText
-    private val mainButton: Button by lazy { findViewById(R.id.main_button) }
     private val picture: ImageView by lazy { findViewById(R.id.picture) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val url: String = "https://kb.rspca.org.au/wp-content/uploads/2023/06/bearded-dragon-on-sand.jpg"
+        val url = "https://kb.rspca.org.au/wp-content/uploads/2023/06/bearded-dragon-on-sand.jpg"
         url.downloadPictureByUrl()
     }
 
